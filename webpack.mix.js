@@ -12,6 +12,8 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+    .sass('resources/sass/app.scss', 'public/css')
+    .copy('node_modules/font-awesome/fonts/', 'public/fonts')
+    .sass('node_modules/font-awesome/scss/font-awesome.scss', 'public/css');
 
 mix.styles(['public/css/vendor/admin_page.css'], 'public/css/management.css');

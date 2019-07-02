@@ -4,7 +4,7 @@ namespace App\Repositories\ManagementRepository;
 
 use App\Models\Posts;
 
-class PostRepository
+class PostRepository implements PostInterface
 {
     protected $post;
 
@@ -31,5 +31,10 @@ class PostRepository
     public function update(array $data, $id)
     {
         return $this->post->update($data);
+    }
+
+    public function delete($id)
+    {
+
     }
 }

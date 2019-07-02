@@ -19,9 +19,9 @@ class CreatePostsTable extends Migration
             $table->text('content');
             $table->text('description');
             $table->text('num_collection');
-            $table->int('user_id');
-            $table->int('category');
-            $table->int('soft_delete');
+            $table->integer('user_id');
+            $table->integer('category');
+            $table->integer('soft_delete');
             $table->timestamps();
         });
     }

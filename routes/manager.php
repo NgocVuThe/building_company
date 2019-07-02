@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/home', function () {
-    return view('management.admin_page.admin');
-});
+Route::get('/home', 'AdminController@index')->name('manager.admin_page');
+Route::get('/home/list-post', 'PostController@index')->name('manager.admin_page.list_post');
