@@ -2,13 +2,13 @@
 
 namespace App\Repositories\ManagementRepository;
 
-use App\Models\Posts;
+use App\Models\Post;
 
 class PostRepository implements PostInterface
 {
     protected $post;
 
-    public function __construct(Posts $post)
+    public function __construct(Post $post)
     {
         $this->post = $post;
     }

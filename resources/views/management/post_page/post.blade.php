@@ -14,7 +14,7 @@
         </div>
 
         <div class="row table-data">
-            <table class="table table-bordered" style="table-layout: auto; width: 100%;">
+            <table class="table table-bordered text-center" style="table-layout: auto; width: 100%;">
                 <thead>
                     <tr>
                         <th>No.</th>
@@ -26,8 +26,8 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
                         @foreach ($posts as $post)
+                        <tr>
                             <td>{{$post->id}}</td>
                             <td>{{$post->title}}</td>
                             <td>{{$post->description}}</td>
@@ -35,14 +35,12 @@
                             <td>{{$post->user_id}}</td>
                             <td>{{$post->content}}</td>
                             <td>
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-edit"></i> </button>
+                                <a href="{{ route('manager.admin_page.edit_post', $post->id) }}" class="btn btn-primary"><i class="fa fa-edit"></i> </a>
                                 <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> </button>
                             </td>
+                        </tr> 
                         @endforeach
-                    </tr>
-
                 </tbody>
-
             </table>
         </div>
     </div>

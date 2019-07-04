@@ -12,4 +12,6 @@
 */
 
 Route::get('/home', 'AdminController@index')->name('manager.admin_page');
-Route::get('/home/list-post', 'PostController@index')->name('manager.admin_page.list_post');
+Route::get('/list-post', 'PostController@index')->name('manager.admin_page.list_post');
+Route::get('/edit-post/post_id={post_id}', 'PostController@edit')->name('manager.admin_page.edit_post');
+

@@ -9,12 +9,13 @@
   padding: 0;
 }
 .main_menu{
-  background-color: rgb(41, 40, 40);
+  
   min-height: 100vh;
 }
 .column_left{
   border: 1px solid black;
   min-height: 100vh;
+  background-color: rgb(41, 40, 40);
 }
 .column_middle{
   border: 1px solid red;
@@ -134,6 +135,19 @@ height: 100px;
 .post_header{
     position: absolute;
     bottom: 5%;
+}
+.page_title{
+    margin-top: 2rem;
+}
+.post_title{
+    border-bottom: 2px solid #ccc;
+}
+.right_column{
+    background-color: rgb(247, 214, 214);
+    height: 200vh;
+}
+.edit-form{
+    margin: 3rem 1rem;
 }
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 

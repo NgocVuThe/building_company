@@ -18,7 +18,9 @@
                 @include('management.partials.menu_left')
             </div>
             <div class="column_middle col-md-10">
-                @yield('main_page')
+                <div class="container @yield('page_description')">
+                    @yield('main_page')
+                </div>
             </div>
         </div>
     </div>
