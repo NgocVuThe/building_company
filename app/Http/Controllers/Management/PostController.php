@@ -22,10 +22,15 @@ class PostController extends Controller
         return view('management.post_page.post', compact('posts'));        
     }
 
+    public function create(Request $request)
+    {
+        return view('management.post_page.create');
+    }
+
     public function edit(Request $request)
     {
         $post_id = $request->route('post_id');
-        $posts = $this->posts->getById($post_id);
-        return view('management.post_page.edit', compact('posts', 'post_id'));
+        $post = $this->posts->getById($post_id);
+        return view('management.post_page.edit', compact('post', 'post_id'));
     }
 }

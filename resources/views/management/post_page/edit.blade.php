@@ -1,7 +1,7 @@
 @extends('management.layout.app')
 @section('page_title', 'Chỉnh Sửa Bài Viết')
 @section('body_class', 'edit_post')
-@section('page_description', 'edit_content')
+@section('page_description', 'edit_post')
 @section('main_page')
     <div class="row page_title">
         <div class="col-md-9">
@@ -12,27 +12,27 @@
                 <div class="container">
                     <div class="form-group">
                         <label for="" class="col-3"><span>Title</span></label>
-                        <input type="text" class="form-control col-12">
+                    <input type="text" class="form-control col-12" value="{{$post->title}}">
                     </div>
                     <div class="form-group">
                         <label for="" class="col-3">Description</label>
-                        <textarea type="text" class="form-control col-12"></textarea>
+                        <textarea type="text" rows="4" class="form-control col-12">{{$post->description}}
+                        </textarea>
                     </div>
                     <div class="form-group">
                         <label for="" class="col-3">Content</label>
-                        <textarea type="text" class="form-control col-12"></textarea>
+                        <textarea type="text" rows="8" class="form-control col-12">{{ $post->content }}</textarea>
                     </div>
                     <div class="form-group">
                         <label for="" class="col-3">Category</label>
-                        <input type="text" class="form-control col-12">
+                        <input type="text" class="form-control col-12" value="{{ $post->category }}">
                     </div>
                     <div class="form-group">
                         <label for="" class="col-3">Num Collection</label>
-                        <input type="text" class="form-control col-12">
+                        <input type="text" class="form-control col-12" value="{{ $post->num_collection }}">
                     </div>
                     <div class="form-group">
                         <label for="" class="col-3">Image</label>
-                        <input type="text" class="form-control col-12">
                     </div>
                 </div>
             </div>

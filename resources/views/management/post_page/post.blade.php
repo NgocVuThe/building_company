@@ -9,7 +9,7 @@
                 <h2 class="post_header"><i class="fa fa-list"></i> POST LIST</h2>
             </div>
             <div class="col-md-6 btn-create-new-post">
-                <button type="submit" class="btn btn-success btn-create"><i class="fa fa-plus"></i> CREATE NEW POST</button>
+                <a href="{{ route('manager.create_new_post') }}" class="btn btn-success btn-create"><i class="fa fa-plus"></i> CREATE NEW POST</a>
             </div>
         </div>
 

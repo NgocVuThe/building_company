@@ -12,6 +12,7 @@
 */
 
 Route::get('/home', 'AdminController@index')->name('manager.admin_page');
+Route::get('/create-new-post', 'PostController@create')->name('manager.create_new_post');
 Route::get('/list-post', 'PostController@index')->name('manager.admin_page.list_post');
 Route::get('/edit-post/post_id={post_id}', 'PostController@edit')->name('manager.admin_page.edit_post');
 

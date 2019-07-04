@@ -13,12 +13,10 @@
   min-height: 100vh;
 }
 .column_left{
-  border: 1px solid black;
   min-height: 100vh;
   background-color: rgb(41, 40, 40);
 }
 .column_middle{
-  border: 1px solid red;
   min-height: 100vh;
   background-color: rgb(216, 213, 213);
 }
@@ -143,11 +141,27 @@ height: 100px;
     border-bottom: 2px solid #ccc;
 }
 .right_column{
-    background-color: rgb(247, 214, 214);
-    height: 200vh;
+    background:#DDD;
+    min-height: 300vh;
+    border:1px solid #CCC;
 }
 .edit-form{
     margin: 3rem 1rem;
+}
+.publish_title{
+    height: 40px;
+    border-bottom: 2px solid #ccc;
+}
+.btn-save-draff{
+    position: absolute;
+    left: 0;
+}
+.btn-publish{
+    position: absolute;
+    right: 0;
+}
+.btn-setting{
+    height: 50px;
 }
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 

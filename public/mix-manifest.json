@@ -2,5 +2,6 @@
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/css/font-awesome.css": "/css/font-awesome.css",
+    "/js/manager.js": "/js/manager.js",
     "/css/management.css": "/css/management.css"
 }

@@ -17,3 +17,4 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('node_modules/font-awesome/scss/font-awesome.scss', 'public/css');
 
 mix.styles(['public/css/vendor/admin_page.css'], 'public/css/management.css');
+mix.js('public/js/manager.js', 'public/js/manager.js');   
